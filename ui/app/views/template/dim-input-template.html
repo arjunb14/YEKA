@@ -1,0 +1,7 @@
+<div class="input-group">
+    <input type="number" class="form-control" id="{{::id}}" placeholder="{{::placeholder}}" ng-model="param.value">
+    <div class="input-group-btn">
+        <select ng-model="param.dimension" class="btn btn-secondary custom-select dimension-select" ng-options="dim for dim in dimensions">
+        </select>
+    </div>
+</div>

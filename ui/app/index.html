@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:scss -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="yekaApp">
+        <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a>
+            to improve your experience.
+        </p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <section class="page-container">
+            <div class="page-head">
+                <h3 class="page-title">Yeka Industries</h3>
+            </div>
+            <div class="container-fluid page-body">
+                <div class="row">
+                    <div class="page-sidebar col-md-3 col-sm-3 col-lg-2">
+                        <ul class="nav flex-column">
+                            <li id="home" class="nav-item active">
+                                <a class="nav-link" href="#!/home">
+                                    <i class="material-icons">home</i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li id="customer" class="nav-item">
+                                <a class="nav-link" href="#!/customer">
+                                    <i class="material-icons">account_box</i>
+                                    Customers
+                                </a>
+                            </li>
+                            <li id="product" class="nav-item">
+                                <a class="nav-link" href="#!/product">
+                                    <i class="material-icons">build</i>
+                                    Products
+                                </a>
+                            </li>
+                            <li id="orders" class="nav-item">
+                                <a class="nav-link" href="#!/orders">
+                                    <i class="material-icons">shopping_basket</i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li id="dc" class="nav-item">
+                                <a class="nav-link" href="#!/dc">
+                                    <i class="material-icons">library_books</i>
+                                    Delivery Chalans
+                                </a>
+                            </li>
+                            <li id="settings" class="nav-item">
+                                <a class="nav-link" href="#!/settings">
+                                    <i class="material-icons">settings</i>
+                                    Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="view-container col-md-9 col-sm-9 col-lg-10" ng-view=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- build:js(.) scripts/oldieshim.js -->
+        <!--[if lt IE 9]>
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <![endif]-->
+        <!-- endbuild -->
+
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/tether/dist/js/tether.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/ToolBarController.js"></script>
+        <script src="scripts/controllers/CustomerController.js"></script>
+        <script src="scripts/controllers/ProductsController.js"></script>
+        <script src="scripts/controllers/OrdersController.js"></script>
+        <script src="scripts/controllers/DCController.js"></script>
+        <script src="scripts/directives/nav.js"></script>
+        <script src="scripts/directives/dimension-input.js"></script>
+        <script src="scripts/service/HttpService.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:remove -->
+        <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+        <script src="scripts/mockbackend/mockdata.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
